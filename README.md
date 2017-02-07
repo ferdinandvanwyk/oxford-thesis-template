@@ -35,5 +35,6 @@ Customization
 2. Package importing and related setting are in `main.tex`
 3. Layout settings can be found in `oxfordthesis.sty`
 4. Change university logo in `oxfordthesis.sty` (search for `graphics/oxlogo`)
+5. Place useful macros in `macros.tex`
 
 
