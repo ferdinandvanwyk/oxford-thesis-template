@@ -1,5 +1,5 @@
-Oxford Thesis Template
-======================
+University of Oxford Thesis Template
+====================================
 
 A LaTeX thesis template for use at the University of Oxford (and possibly
 elsewhere) based on the LaTeX Memoir class.
