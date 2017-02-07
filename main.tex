@@ -1,0 +1,80 @@
+\documentclass[a4paper,twoside,openany,12pt]{memoir}
+
+% Memoir linespacing
+\DoubleSpacing
+
+% LaTeX packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{bigfoot}
+\usepackage{bm}
+\usepackage{caption}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage[utf8]{inputenc}
+\usepackage[
+  safeinputenc,
+  style=phys,
+  backend=biber,
+  sorting=none,
+  minnames=10,
+  maxnames=10,
+  biblabel=brackets
+]{biblatex}
+\addbibresource{references.bib}
+\usepackage{libertine}
+\usepackage{lipsum}
+\usepackage{oxfordthesis}
+\usepackage{xr}
+\usepackage{xr-hyper}
+
+% Title / Author / Date / Degree / etc.
+\input{metadata}
+
+\usepackage[
+	pdftitle={\oxfthetitle},
+	pdfauthor={\oxftheauthor},
+	pdfsubject={Thesis for the Degree of \oxfdegree, \oxfdegreedate},
+	pdfborder=0,
+	bookmarks=true,
+	bookmarksnumbered=true,
+	bookmarksopen=true,
+	bookmarksopenlevel=1,
+	plainpages=false,
+	pdfpagelabels=true,
+	colorlinks=true,
+    citecolor=blue
+]{hyperref}
+\usepackage{memhfixc}
+
+% Your Macros File Here
+\include{macros}
+
+% Main document
+
+\begin{document}
+
+\titlepage
+
+\frontmatter
+
+\include{dedication}
+\include{acknowledgements}
+\include{abstract}
+\tableofcontents
+\listoffigures
+
+\mainmatter
+
+\include{introduction}
+\include{chapter_2}
+\include{conclusion}
+\include{appendices}
+
+\backmatter
+
+\printbibliography
+
+\end{document}
